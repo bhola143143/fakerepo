@@ -13,9 +13,7 @@ import com.example.simple.Result.Success
 
 import kotlinx.coroutines.delay
 
-/**
- * Implementation of the data source that adds a latency simulating network.
- */
+
 object TasksRemoteDataSource : TasksDataSource {
 
     private const val SERVICE_LATENCY_IN_MILLIS = 2000L

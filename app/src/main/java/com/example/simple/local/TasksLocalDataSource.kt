@@ -58,26 +58,6 @@ class TasksLocalDataSource internal constructor(
         //NO-OP
     }
 
-/*    override suspend fun getTasks(): Result<List<Task>> = withContext(ioDispatcher) {
-        return@withContext try {
-            Success(tasksDao.getTasks())
-        } catch (e: Exception) {
-            Error(e)
-        }
-    }
-
-    override suspend fun getTask(taskId: String): Result<Task> = withContext(ioDispatcher) {
-        try {
-            val task = tasksDao.getTaskById(taskId)
-            if (task != null) {
-                return@withContext Success(task)
-            } else {
-                return@withContext Error(Exception("Task not found!"))
-            }
-        } catch (e: Exception) {
-            return@withContext Error(e)
-        }
-    }*/
 
     override suspend fun saveTask(task: Task) = withContext(ioDispatcher) {
         tasksDao.insertTask(task)
