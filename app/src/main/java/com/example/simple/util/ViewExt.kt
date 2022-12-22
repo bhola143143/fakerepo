@@ -1,4 +1,4 @@
-package com.example.simple
+package com.example.simple.util
 
 /**
  * Extension functions and Binding Adapters.
@@ -10,6 +10,9 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
+import com.example.simple.Event
+import com.example.simple.R
+import com.example.simple.ScrollChildSwipeRefreshLayout
 
 import com.google.android.material.snackbar.Snackbar
 

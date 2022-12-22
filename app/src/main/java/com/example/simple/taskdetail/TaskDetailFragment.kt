@@ -12,6 +12,8 @@ import androidx.navigation.fragment.navArgs
 import com.example.simple.*
 import com.example.simple.databinding.TaskdetailFragBinding
 import com.example.simple.tasks.DELETE_RESULT_OK
+import com.example.simple.util.setupRefreshLayout
+import com.example.simple.util.setupSnackbar
 import com.google.android.material.snackbar.Snackbar
 
 /**

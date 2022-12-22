@@ -15,6 +15,8 @@ import androidx.navigation.fragment.navArgs
 import com.example.simple.*
 
 import com.example.simple.databinding.TasksFragBinding
+import com.example.simple.util.setupRefreshLayout
+import com.example.simple.util.setupSnackbar
 
 import com.google.android.material.snackbar.Snackbar
 import timber.log.Timber
