@@ -64,4 +64,13 @@ class TasksViewModelTest {
         assertThat(tasksViewModel.tasksAddViewVisible.getOrAwaitValue(), `is`(true))
     }
 
+    @Test
+    fun  addnewfilterTasks_Visible(){
+
+        tasksViewModel.openTask("bhola")
+
+        assertThat(tasksViewModel.tasksAddViewVisible.getOrAwaitValue(),`is`(true))
+
+    }
+
 }
