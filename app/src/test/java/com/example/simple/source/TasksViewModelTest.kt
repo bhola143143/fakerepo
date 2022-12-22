@@ -2,9 +2,10 @@ package com.example.simple.source
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.example.simple.Task
-import com.example.simple.TasksFilterType
-import com.example.simple.TasksViewModel
-import com.example.simple.source.FakeTestRepository
+
+
+import com.example.simple.tasks.TasksFilterType
+import com.example.simple.tasks.TasksViewModel
 
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import org.hamcrest.CoreMatchers.*

@@ -10,7 +10,7 @@
 
         <variable
             name="viewmodel"
-            type="com.example.simple.TasksViewModel" />
+            type="com.example.simple.tasks.TasksViewModel" />
 
     </data>
 

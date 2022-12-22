@@ -1,8 +1,18 @@
-package com.example.simple
+package com.example.simple.tasks
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.lifecycle.*
+import com.example.simple.Event
+import com.example.simple.R
+import com.example.simple.Task
+import com.example.simple.TasksRepository
+
+
+import com.example.simple.Result
+import com.example.simple.Result.Success
+
+import com.example.simple.TasksDataSource
 
 import kotlinx.coroutines.launch
 

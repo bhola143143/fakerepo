@@ -1,10 +1,11 @@
-package com.example.simple
+package com.example.simple.tasks
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.example.simple.Task
 import com.example.simple.databinding.TaskItemBinding
 
 

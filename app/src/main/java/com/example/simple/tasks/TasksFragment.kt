@@ -1,4 +1,4 @@
-package com.example.simple
+package com.example.simple.tasks
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.example.simple.*
 
 import com.example.simple.databinding.TasksFragBinding
 
