@@ -10,9 +10,7 @@ import com.example.simple.TasksRepository
 import kotlinx.coroutines.runBlocking
 import java.util.LinkedHashMap
 
-/**
- * Implementation of a remote data source with static access to the data for easy testing.
- */
+
 class FakeTestRepository : TasksRepository {
 
     var tasksServiceData: LinkedHashMap<String, Task> = LinkedHashMap()

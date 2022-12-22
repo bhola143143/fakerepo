@@ -1,4 +1,5 @@
 package com.example.simple.local
+
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.map
 
@@ -9,7 +10,6 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import com.example.simple.Result
 import com.example.simple.Result.Success
-
 
 
 class TasksLocalDataSource internal constructor(
@@ -33,7 +33,7 @@ class TasksLocalDataSource internal constructor(
 
     override fun observeTask(taskId: String): LiveData<Result<Task>> {
         return tasksDao.observeTaskById(taskId).map {
-           Success(it)
+            Success(it)
         }
     }
 
@@ -49,6 +49,7 @@ class TasksLocalDataSource internal constructor(
             return@withContext Error(e)
         }
     } as Result<Task>
+
     override suspend fun refreshTask(taskId: String) {
         //NO-OP
     }

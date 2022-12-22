@@ -7,8 +7,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.simple.Task
 
 
-
-
 @BindingAdapter("app:items")
 fun setItems(listView: RecyclerView, items: List<Task>?) {
     items?.let {

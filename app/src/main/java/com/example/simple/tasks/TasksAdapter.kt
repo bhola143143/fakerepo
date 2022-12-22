@@ -9,7 +9,6 @@ import com.example.simple.Task
 import com.example.simple.databinding.TaskItemBinding
 
 
-
 /**
  * Adapter for the task list. Has a reference to the [TasksViewModel] to send actions back to it.
  */

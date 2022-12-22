@@ -1,4 +1,5 @@
 package com.example.simple
+
 import androidx.lifecycle.LiveData
 import com.example.simple.Task
 
@@ -26,7 +27,7 @@ interface TasksRepository {
 
     suspend fun completeTask(taskId: String)
 
-    suspend fun activateTask(task: Task  )
+    suspend fun activateTask(task: Task)
 
     suspend fun activateTask(taskId: String)
 

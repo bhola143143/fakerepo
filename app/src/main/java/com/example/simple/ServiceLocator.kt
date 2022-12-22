@@ -14,6 +14,7 @@ object ServiceLocator {
 
     private val lock = Any()
     private var database: ToDatabase? = null
+
     @Volatile
     var tasksRepository: TasksRepository? = null
         @VisibleForTesting set
@@ -25,7 +26,8 @@ object ServiceLocator {
     }
 
     private fun createTasksRepository(context: Context): TasksRepository {
-        val newRepo = DefaultTasksRepository(TasksRemoteDataSource, createTaskLocalDataSource(context))
+        val newRepo =
+            DefaultTasksRepository(TasksRemoteDataSource, createTaskLocalDataSource(context))
         tasksRepository = newRepo
         return newRepo
     }

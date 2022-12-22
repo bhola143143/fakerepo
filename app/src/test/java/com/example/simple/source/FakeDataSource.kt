@@ -1,4 +1,5 @@
 package com.example.simple.source
+
 import androidx.lifecycle.LiveData
 import com.example.simple.Result
 import com.example.simple.Result.Error
@@ -19,19 +20,19 @@ class FakeDataSource(var tasks: MutableList<Task>? = mutableListOf()) : TasksDat
     }
 
     override suspend fun refreshTasks() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        TODO("not implemented")
     }
 
     override fun observeTask(taskId: String): LiveData<Result<Task>> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        TODO("not implemented")
     }
 
     override suspend fun getTask(taskId: String): Result<Task> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        TODO("not implemented")
     }
 
     override suspend fun refreshTask(taskId: String) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        TODO("not implemented")
     }
 
     override suspend fun saveTask(task: Task) {
@@ -39,23 +40,23 @@ class FakeDataSource(var tasks: MutableList<Task>? = mutableListOf()) : TasksDat
     }
 
     override suspend fun completeTask(task: Task) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        TODO("not implemented")
     }
 
     override suspend fun completeTask(taskId: String) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        TODO("not implemented")
     }
 
     override suspend fun activateTask(task: Task) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        TODO("not implemented")
     }
 
     override suspend fun activateTask(taskId: String) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        TODO("not implemented")
     }
 
     override suspend fun clearCompletedTasks() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        TODO("not implemented")
     }
 
     override suspend fun deleteAllTasks() {
@@ -63,7 +64,7 @@ class FakeDataSource(var tasks: MutableList<Task>? = mutableListOf()) : TasksDat
     }
 
     override suspend fun deleteTask(taskId: String) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        TODO("not implemented")
     }
 
 }

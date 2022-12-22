@@ -9,9 +9,7 @@ import com.example.simple.Result.Success
 import com.example.simple.Task
 import kotlinx.coroutines.launch
 
-/**
- * ViewModel for the Add/Edit screen.
- */
+
 class AddEditTaskViewModel(application: Application) : AndroidViewModel(application) {
 
     private val tasksRepository = (application as ToApplication).taskRepository
